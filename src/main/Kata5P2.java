@@ -10,10 +10,12 @@ import model.Histogram;
 
 
 public class Kata5P2 {
+    
         
     public static List<Mail> input() {
         String nameFile = new String("email.txt");
-        List<Mail> mailList = MailHistogramReader.read(nameFile);
+        view.MailListReaderBD listReader = new view.MailListReaderBD();
+        List<Mail> mailList = listReader.read();
         return mailList;
     }
             
@@ -35,8 +37,8 @@ public class Kata5P2 {
   }
         
     public static void main(String[] args) {
-        Kata5P2 kata4 = new Kata5P2();
-        kata4.execute();    
+        Kata5P2 kata5p2 = new Kata5P2();
+        kata5p2.execute();    
     }
     
 }
