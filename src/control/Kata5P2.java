@@ -1,5 +1,5 @@
 
-package main;
+package control;
 
 import view.HistogramDisplay;
 import model.Mail;
